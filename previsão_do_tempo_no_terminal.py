@@ -39,13 +39,13 @@ def API_enter(city,country):
 
 
 # pode usar com acento normalmente, mas nao precisa, tanto com city tanto com country
-city = input("Enter the city's country (in English): \n").strip()
-country = input("Enter a city: \n").strip()
+country = input("Enter the country (in English): \n").strip()
+city = input("Enter a city: \n").strip()
 
 # pega o codigo ISO 3166-1 alpha-2, ou seja, transforma 'brazil' em 'br', 'EUA' em 'us', etc
 iso_code = pycountry.countries.lookup(country.title()).alpha_2
 # chama a funcao base
-data = API_enter(city,iso_code)
+data = API_enter(city, iso_code)
 
 if data:
     # exemplo simples de uso dos dados
