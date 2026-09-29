@@ -52,3 +52,5 @@ if data:
     temperature = data["main"]["temp"]
     description = data["weather"][0]["description"]
     print(f"Temperature in {city}, {country}: {temperature}°C ({description})\n")
+
+input("Press Enter to exit...")
